@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23F1B90C-EC57-4450-991B-E2D01816C23F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesktopGuide</RootNamespace>
+    <AssemblyName>Guide</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GuideIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseKiosk|AnyCPU'">
+    <OutputPath>bin\ReleaseKiosk\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugKiosk|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugKiosk\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugCallCenter|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugCallCenter\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseCallCenter|AnyCPU'">
+    <OutputPath>bin\ReleaseCallCenter\</OutputPath>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseSecurity|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ReleaseSecurity\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugSecurityHW_1|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugSecurityHW_1\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Security01,SecurityHW01</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseSecurityHW_1|AnyCPU'">
+    <OutputPath>bin\ReleaseSecurityHW_1\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>Security01,SecurityHW01</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugSecuritySW_1|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugSecuritySW_1\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Security01,SecuritySW01</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseSecuritySW_1|AnyCPU'">
+    <OutputPath>bin\ReleaseSecuritySW_1\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>Security01,SecuritySW01</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controls\Accolade.cs">
+      <SubType>UserControl</SubType>
+    </None>
+    <Compile Include="Controls\Circle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Arrow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MyForm.Designer.cs">
+      <DependentUpon>MyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MyLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="en02.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="en02.Designer.cs">
+      <DependentUpon>en02.cs</DependentUpon>
+    </None>
+    <None Include="en01.cs">
+      <SubType>Form</SubType>
+    </None>
+    <None Include="en01.Designer.cs">
+      <DependentUpon>en01.cs</DependentUpon>
+    </None>
+    <Compile Include="fa17_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa17_2.Designer.cs">
+      <DependentUpon>fa17_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa34.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa34.Designer.cs">
+      <DependentUpon>fa34.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa33.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa33.Designer.cs">
+      <DependentUpon>fa33.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa32.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa32.Designer.cs">
+      <DependentUpon>fa32.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa31.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa31.Designer.cs">
+      <DependentUpon>fa31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa30.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa30.Designer.cs">
+      <DependentUpon>fa30.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa29.Designer.cs">
+      <DependentUpon>fa29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa27.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa27.Designer.cs">
+      <DependentUpon>fa27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa28.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa28.Designer.cs">
+      <DependentUpon>fa28.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa26.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa26.Designer.cs">
+      <DependentUpon>fa26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa25.Designer.cs">
+      <DependentUpon>fa25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa24.Designer.cs">
+      <DependentUpon>fa24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa23.Designer.cs">
+      <DependentUpon>fa23.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa22.Designer.cs">
+      <DependentUpon>fa22.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa21.Designer.cs">
+      <DependentUpon>fa21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa20.Designer.cs">
+      <DependentUpon>fa20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa19.Designer.cs">
+      <DependentUpon>fa19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa14.Designer.cs">
+      <DependentUpon>fa14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa12.Designer.cs">
+      <DependentUpon>fa12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa11.Designer.cs">
+      <DependentUpon>fa11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa07.Designer.cs">
+      <DependentUpon>fa07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa06.Designer.cs">
+      <DependentUpon>fa06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa05.Designer.cs">
+      <DependentUpon>fa05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa04.Designer.cs">
+      <DependentUpon>fa04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa02.Designer.cs">
+      <DependentUpon>fa02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\MyForm.resx">
+      <DependentUpon>MyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="en02.resx">
+      <DependentUpon>en02.cs</DependentUpon>
+    </None>
+    <None Include="en01.resx">
+      <DependentUpon>en01.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="fa17_2.resx">
+      <DependentUpon>fa17_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa34.resx">
+      <DependentUpon>fa34.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa33.resx">
+      <DependentUpon>fa33.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa32.resx">
+      <DependentUpon>fa32.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa31.resx">
+      <DependentUpon>fa31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa30.resx">
+      <DependentUpon>fa30.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa29.resx">
+      <DependentUpon>fa29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa27.resx">
+      <DependentUpon>fa27.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa28.resx">
+      <DependentUpon>fa28.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa26.resx">
+      <DependentUpon>fa26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa25.resx">
+      <DependentUpon>fa25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa24.resx">
+      <DependentUpon>fa24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa23.resx">
+      <DependentUpon>fa23.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa22.resx">
+      <DependentUpon>fa22.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa21.resx">
+      <DependentUpon>fa21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa20.resx">
+      <DependentUpon>fa20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa19.resx">
+      <DependentUpon>fa19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa14.resx">
+      <DependentUpon>fa14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa12.resx">
+      <DependentUpon>fa12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa11.resx">
+      <DependentUpon>fa11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa07.resx">
+      <DependentUpon>fa07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa06.resx">
+      <DependentUpon>fa06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa05.resx">
+      <DependentUpon>fa05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa04.resx">
+      <DependentUpon>fa04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa02.resx">
+      <DependentUpon>fa02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="BNAZANIN.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BNAZANINB.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BTITR.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BTITRB.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BYEKAN.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserOfflineSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserOnlineSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserBusySmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InRoomSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InRoomFullSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InRoomLockedSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InRoomPinnedSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\legacy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Contact_List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Bug_Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Direct_Call_Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Recent_Events.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Holding_Conference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Dialpad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Invite_People.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Joining_Room_Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Message_Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Option_Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Option_Network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Option_Status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Option_User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Option_Version.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Participant_Control_Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Room_Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmptyRoom_01Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullRoom_01Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LockedRoom_01Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OccupiedRoom_01Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PinnedRoom_01Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Joining_Conference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LockedPinnedRoomSmall_01Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Recording_Option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Conference_Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Conference_Chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GuideIcon.ico" />
+    <None Include="Resources\Farsi_Confirmation_Code.png" />
+    <None Include="Resources\Farsi_Welcome.PNG" />
+    <None Include="Resources\1.PNG" />
+    <None Include="Resources\Farsi_Option_Devices.PNG" />
+    <None Include="Resources\Farsi_Settings_Tab.PNG" />
+    <None Include="Resources\Farsi_Camera_Test.PNG" />
+    <None Include="Resources\Farsi_Audio _Test.PNG" />
+    <None Include="Resources\Farsi_Main_Window.PNG" />
+    <None Include="Resources\Farsi_ParticipantPage.png" />
+    <None Include="Resources\Farsi_RollCall.jpg" />
+    <None Include="Resources\Farsi_Voting.PNG" />
+    <None Include="Resources\English_Main_Window.png" />
+    <None Include="Resources\Farsi_Participant_FECC_Control_Window.png" />
+    <None Include="Resources\English_Login_Page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farsi_Login_Page.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
