@@ -184,6 +184,18 @@
     <Compile Include="fa17_2.Designer.cs">
       <DependentUpon>fa17_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="fa36.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa36.Designer.cs">
+      <DependentUpon>fa36.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fa35.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fa35.Designer.cs">
+      <DependentUpon>fa35.cs</DependentUpon>
+    </Compile>
     <Compile Include="fa34.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,12 +298,6 @@
     <Compile Include="fa14.Designer.cs">
       <DependentUpon>fa14.cs</DependentUpon>
     </Compile>
-    <Compile Include="fa12.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fa12.Designer.cs">
-      <DependentUpon>fa12.cs</DependentUpon>
-    </Compile>
     <Compile Include="fa11.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,12 +322,6 @@
     <Compile Include="fa05.Designer.cs">
       <DependentUpon>fa05.cs</DependentUpon>
     </Compile>
-    <Compile Include="fa04.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fa04.Designer.cs">
-      <DependentUpon>fa04.cs</DependentUpon>
-    </Compile>
     <Compile Include="fa02.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -341,6 +341,12 @@
     </None>
     <EmbeddedResource Include="fa17_2.resx">
       <DependentUpon>fa17_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa36.resx">
+      <DependentUpon>fa36.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fa35.resx">
+      <DependentUpon>fa35.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fa34.resx">
       <DependentUpon>fa34.cs</DependentUpon>
@@ -393,9 +399,6 @@
     <EmbeddedResource Include="fa14.resx">
       <DependentUpon>fa14.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fa12.resx">
-      <DependentUpon>fa12.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fa11.resx">
       <DependentUpon>fa11.cs</DependentUpon>
     </EmbeddedResource>
@@ -407,9 +410,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fa05.resx">
       <DependentUpon>fa05.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fa04.resx">
-      <DependentUpon>fa04.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fa02.resx">
       <DependentUpon>fa02.cs</DependentUpon>
@@ -516,24 +516,6 @@
     <None Include="Resources\Farsi_Message_Window.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Farsi_Option.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Farsi_Option_Image.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Farsi_Option_Network.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Farsi_Option_Status.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Farsi_Option_User.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Farsi_Option_Version.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Farsi_Participant_Control_Window.png" />
   </ItemGroup>
   <ItemGroup>
@@ -561,9 +543,6 @@
     <None Include="Resources\LockedPinnedRoomSmall_01Small.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Farsi_Recording_Option.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Farsi_Conference_Window.png" />
   </ItemGroup>
   <ItemGroup>
@@ -571,11 +550,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GuideIcon.ico" />
+    <None Include="Resources\Farsi_Option_User_AutoLogin.PNG" />
+    <None Include="Resources\Farsi_Option_User_Pass.PNG" />
+    <None Include="Resources\Farsi_Option_Version.PNG" />
+    <None Include="Resources\Farsi_Option_User.PNG" />
+    <None Include="Resources\Farsi_Option_Status.PNG" />
+    <None Include="Resources\Farsi_Option_Network.PNG" />
+    <None Include="Resources\Farsi_Option_Image.PNG" />
+    <None Include="Resources\Farsi_Option_Devices.PNG" />
+    <None Include="Resources\Farsi_Option.PNG" />
+    <None Include="Resources\Farsi_Recording_Option.PNG" />
+    <None Include="Resources\Farsi_Settings_Tab.PNG" />
     <None Include="Resources\Farsi_Confirmation_Code.png" />
     <None Include="Resources\Farsi_Welcome.PNG" />
     <None Include="Resources\1.PNG" />
-    <None Include="Resources\Farsi_Option_Devices.PNG" />
-    <None Include="Resources\Farsi_Settings_Tab.PNG" />
     <None Include="Resources\Farsi_Camera_Test.PNG" />
     <None Include="Resources\Farsi_Audio _Test.PNG" />
     <None Include="Resources\Farsi_Main_Window.PNG" />

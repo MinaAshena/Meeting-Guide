@@ -417,7 +417,7 @@
             this.myButton6.Size = new System.Drawing.Size(26, 30);
             this.myButton6.TabIndex = 49;
             this.myButton6.UseVisualStyleBackColor = false;
-            this.myButton6.Click += new System.EventHandler(this.myButton6_Click);
+            //this.myButton6.Click += new System.EventHandler(this.myButton6_Click);
             // 
             // myButton5
             // 

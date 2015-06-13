@@ -35,20 +35,20 @@ namespace DesktopGuide
 
         }
 
-        private void myButton3_Click(object sender, EventArgs e)
-        {
-            MoveToSlide(new fa12());
-        }
+        //private void myButton3_Click(object sender, EventArgs e)
+        //{
+        //    MoveToSlide(new fa12());
+        //}
 
         //private void myButton4_Click(object sender, EventArgs e)
         //{
         //    MoveToSlide(new fa13());
         //}
 
-        private void myButton6_Click(object sender, EventArgs e)
-        {
-            MoveToSlide(new fa04());
-        }
+        //private void myButton6_Click(object sender, EventArgs e)
+        //{
+        //    MoveToSlide(new fa04());
+        //}
 
         private void myButton5_Click(object sender, EventArgs e)
         {

@@ -293,6 +293,26 @@ namespace DesktopGuide.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Farsi_Option_User_AutoLogin {
+            get {
+                object obj = ResourceManager.GetObject("Farsi_Option_User_AutoLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Farsi_Option_User_Pass {
+            get {
+                object obj = ResourceManager.GetObject("Farsi_Option_User_Pass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Farsi_Option_Version {
             get {
                 object obj = ResourceManager.GetObject("Farsi_Option_Version", resourceCulture);

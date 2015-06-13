@@ -120,16 +120,7 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="label2.Text" xml:space="preserve">
-    <value>برای ویرایش مشخصات(نام و نام خانوادگی و ..) وارد این قسمت شوید.
-
-برای ورود خودکار بدون رمز عبور این گزینه را انتخاب نمایید.
-
-اگر مایل به استفاده از رمز عبور هستید این گزینه را انتخاب نمایید.
-
-رمز عبور مورد نظر خود را با حداقل 8 حرف در این قسمت وارد نمایید.
-
-برای اطمینان از صحت ورود رمز جدید، آن را  مجدداً در این قسمت وارد نمایید.
-</value>
-  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
