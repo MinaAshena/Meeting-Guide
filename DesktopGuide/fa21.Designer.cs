@@ -56,6 +56,7 @@
             this.myButton1 = new DesktopGuide.Controls.MyButton();
             this.myLabel1 = new DesktopGuide.Controls.MyLabel();
             this.arrow7 = new DesktopGuide.Controls.Arrow();
+            this.myButton3 = new DesktopGuide.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.main)).BeginInit();
             this.main.SuspendLayout();
             this.SuspendLayout();
@@ -333,6 +334,7 @@
             // main
             // 
             this.main.BackColor = System.Drawing.Color.Transparent;
+            this.main.Controls.Add(this.myButton3);
             this.main.Controls.Add(this.myButton2);
             this.main.Controls.Add(this.myButton1);
             this.main.Image = global::DesktopGuide.Properties.Resources.Farsi_Option_Network;
@@ -348,7 +350,7 @@
             this.myButton2._transparentParent = this.main;
             this.myButton2.BackColor = System.Drawing.Color.Transparent;
             this.myButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.myButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.myButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.myButton2.FlatAppearance.BorderSize = 2;
             this.myButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.myButton2.Location = new System.Drawing.Point(22, 460);
@@ -363,7 +365,7 @@
             this.myButton1._transparentParent = this.main;
             this.myButton1.BackColor = System.Drawing.Color.Transparent;
             this.myButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.myButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.myButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.myButton1.FlatAppearance.BorderSize = 2;
             this.myButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.myButton1.Location = new System.Drawing.Point(21, 2);
@@ -397,6 +399,21 @@
             this.arrow7.Name = "arrow7";
             this.arrow7.Size = new System.Drawing.Size(35, 18);
             this.arrow7.TabIndex = 27;
+            // 
+            // myButton3
+            // 
+            this.myButton3._transparentParent = this.main;
+            this.myButton3.BackColor = System.Drawing.Color.Transparent;
+            this.myButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.myButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.myButton3.FlatAppearance.BorderSize = 2;
+            this.myButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.myButton3.Location = new System.Drawing.Point(22, 391);
+            this.myButton3.Name = "myButton3";
+            this.myButton3.Size = new System.Drawing.Size(254, 24);
+            this.myButton3.TabIndex = 49;
+            this.myButton3.UseVisualStyleBackColor = false;
+            this.myButton3.Click += new System.EventHandler(this.myButton3_Click);
             // 
             // fa21
             // 
@@ -490,6 +507,7 @@
         private Controls.MyLabel label5;
         private Controls.MyLabel label6;
         private Controls.MyLabel label15;
+        private Controls.MyButton myButton3;
     }
 }
 
