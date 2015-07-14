@@ -253,9 +253,6 @@
   <data name="PinnedRoom_01Small" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PinnedRoom_01Small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Farsi_Confirmation_Code" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Farsi_Confirmation_Code.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Farsi_User_Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -267,5 +264,8 @@
   </data>
   <data name="Farsi_Option_User_Pass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Farsi_Option_User_Pass.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Farsi_Confirmation_Code" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Farsi_Confirmation_Code.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
