@@ -37,6 +37,9 @@
             this.arrow6 = new DesktopGuide.Controls.Arrow();
             this.main = new System.Windows.Forms.PictureBox();
             this.myButton5 = new DesktopGuide.Controls.MyButton();
+            this.myLabel2 = new DesktopGuide.Controls.MyLabel();
+            this.arrow1 = new DesktopGuide.Controls.Arrow();
+            this.myLabel9 = new DesktopGuide.Controls.MyLabel();
             ((System.ComponentModel.ISupportInitialize)(this.main)).BeginInit();
             this.main.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +69,7 @@
             this.myLabel1.AutoSize = true;
             this.myLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.myLabel1.ForeColor = System.Drawing.Color.Red;
-            this.myLabel1.Location = new System.Drawing.Point(425, 232);
+            this.myLabel1.Location = new System.Drawing.Point(425, 263);
             this.myLabel1.Name = "myLabel1";
             this.myLabel1.Size = new System.Drawing.Size(17, 18);
             this.myLabel1.TabIndex = 47;
@@ -91,8 +94,8 @@
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(311, 243);
             this.label2.TabIndex = 54;
-            this.label2.Text = "شماره تلفن همراه خود را در این قسمت وارد نمایید.\r\n\r\nبرای دریافت کد فعالسازی این د" +
-    "کمه را فشار دهید.\r\n";
+            this.label2.Text = "شماره تلفن همراه خود را در این قسمت وارد نمایید.\r\n\r\nایمیل خود را در این قسمت وارد" +
+    " نمایید.\r\n\r\nبرای دریافت کد فعالسازی این دکمه را فشار دهید.\r\n";
             // 
             // myLabel8
             // 
@@ -128,9 +131,9 @@
             this.arrow6._transparentParent = this;
             this.arrow6.BackColor = System.Drawing.Color.Transparent;
             this.arrow6.ForeColor = System.Drawing.Color.SteelBlue;
-            this.arrow6.Location = new System.Drawing.Point(315, 232);
+            this.arrow6.Location = new System.Drawing.Point(379, 262);
             this.arrow6.Name = "arrow6";
-            this.arrow6.Size = new System.Drawing.Size(103, 18);
+            this.arrow6.Size = new System.Drawing.Size(42, 18);
             this.arrow6.TabIndex = 80;
             // 
             // main
@@ -153,16 +156,55 @@
             this.myButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.myButton5.FlatAppearance.BorderSize = 2;
             this.myButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.myButton5.Location = new System.Drawing.Point(136, 162);
+            this.myButton5.Location = new System.Drawing.Point(144, 229);
             this.myButton5.Name = "myButton5";
             this.myButton5.Size = new System.Drawing.Size(136, 43);
             this.myButton5.TabIndex = 49;
             this.myButton5.UseVisualStyleBackColor = false;
             this.myButton5.Click += new System.EventHandler(this.myButton5_Click);
             // 
+            // myLabel2
+            // 
+            this.myLabel2.AutoSize = true;
+            this.myLabel2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.myLabel2.ForeColor = System.Drawing.Color.Red;
+            this.myLabel2.Location = new System.Drawing.Point(425, 308);
+            this.myLabel2.Name = "myLabel2";
+            this.myLabel2.Size = new System.Drawing.Size(17, 18);
+            this.myLabel2.TabIndex = 81;
+            this.myLabel2.Text = "3";
+            // 
+            // arrow1
+            // 
+            this.arrow1._CapSize = 10F;
+            this.arrow1._Direction = DesktopGuide.Controls.Arrow.Direction.RightToLeft;
+            this.arrow1._FilledCap = false;
+            this.arrow1._LineWidth = 1F;
+            this.arrow1._transparentParent = this;
+            this.arrow1.BackColor = System.Drawing.Color.Transparent;
+            this.arrow1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.arrow1.Location = new System.Drawing.Point(296, 307);
+            this.arrow1.Name = "arrow1";
+            this.arrow1.Size = new System.Drawing.Size(125, 18);
+            this.arrow1.TabIndex = 80;
+            // 
+            // myLabel9
+            // 
+            this.myLabel9.AutoSize = true;
+            this.myLabel9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.myLabel9.ForeColor = System.Drawing.Color.Red;
+            this.myLabel9.Location = new System.Drawing.Point(757, 191);
+            this.myLabel9.Name = "myLabel9";
+            this.myLabel9.Size = new System.Drawing.Size(25, 21);
+            this.myLabel9.TabIndex = 82;
+            this.myLabel9.Text = "-3";
+            // 
             // fa33
             // 
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.myLabel9);
+            this.Controls.Add(this.arrow1);
+            this.Controls.Add(this.myLabel2);
             this.Controls.Add(this.arrow7);
             this.Controls.Add(this.arrow6);
             this.Controls.Add(this.myLabel8);
@@ -182,6 +224,9 @@
             this.Controls.SetChildIndex(this.arrow7, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.prevButton, 0);
+            this.Controls.SetChildIndex(this.myLabel2, 0);
+            this.Controls.SetChildIndex(this.arrow1, 0);
+            this.Controls.SetChildIndex(this.myLabel9, 0);
             ((System.ComponentModel.ISupportInitialize)(this.main)).EndInit();
             this.main.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -200,6 +245,9 @@
         private Controls.Arrow arrow7;
         private Controls.Arrow arrow6;
         private Controls.MyButton myButton5;
+        private Controls.Arrow arrow1;
+        private Controls.MyLabel myLabel2;
+        private Controls.MyLabel myLabel9;
 
     }
 }

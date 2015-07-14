@@ -24,7 +24,9 @@ namespace DesktopGuide
         protected void MoveToSlide(MyForm f)
         {
             this.Hide();
-            switch (f.ShowDialog())
+            DialogResult result = f.ShowDialog();
+            f.Dispose();
+            switch (result)
             {
                 case DialogResult.Cancel:
                     this.Close();
